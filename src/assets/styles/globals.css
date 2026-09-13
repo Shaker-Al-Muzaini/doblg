@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas-base: #0D0F12;
+  --color-surface-panel: #16191E;
+  --color-surface-subdued: #1F242C;
+  --color-surface-sunken: #0A0C0F;
+  --color-border-divider: #262B34;
+  --color-text-primary: #F3F4F6;
+  --color-text-secondary: #9CA3AF;
+  --color-accent-primary: #6366F1;
+}
+
+.light {
+  --color-canvas-base: #F8FAFC;
+  --color-surface-panel: #FFFFFF;
+  --color-surface-subdued: #F1F5F9;
+  --color-surface-sunken: #E2E8F0;
+  --color-border-divider: #E2E8F0;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-accent-primary: #4F46E5;
+}
+
+/* Base Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-canvas-base) !important;
+  color: var(--color-text-primary) !important;
+  font-family: 'Readex Pro', 'Inter', system-ui, -apple-system, sans-serif !important;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Bootstrap & Tailwind Harmony Overrides */
+a {
+  text-decoration: none !important;
+}
+
+button {
+  border-radius: initial;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Studio Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0F12;
+}
+::-webkit-scrollbar-thumb {
+  background: #262B34;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366F1;
+}

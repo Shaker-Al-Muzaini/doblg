@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# ملفات البيئة الحساسة (التي تحتوي على كلمات المرور ومفاتيح الـ API)
+.env
+.env.local
+.env.*.local
+
+# ملفات النظام والمحرر الخاصة
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

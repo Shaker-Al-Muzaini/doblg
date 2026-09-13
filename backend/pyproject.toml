@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shaker-Al-Muzaini", email = "sshakiralmazini@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "elevenlabs>=2.68.0",
+    "fastapi[standard]>=0.141.1",
+    "openai>=3.13.0",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic>=2.13.5",
+    "pyjwt>=2.14.0",
+    "python-dotenv>=1.2.3",
+    "python-jose[cryptography]>=3.5.0",
+    "python-multipart>=0.0.32",
+    "sqlalchemy>=2.0.52",
+    "sse-starlette>=3.4.11",
+    "uvicorn>=0.52.4",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
